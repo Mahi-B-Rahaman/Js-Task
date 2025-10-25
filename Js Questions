@@ -1,0 +1,53 @@
+Q1. Explain the difference between var, let, and const in terms of scope and hoisting. Provide an example where var behaves differently from let and const
+
+Ans: Hoistin makes variables declare at the startin of the entire block but does not initialize the value .
+
+Let,Const : In the case of let and const, if we write a code like this , 
+
+console.log(Val);
+let Val = 10;
+
+the Val variable will be hoisted at the top and will be declared but its value will not be initialized . so a reference error will show up
+
+Var :  In the case of Var, if we write a code like this , 
+
+console.log(Val);
+var Val = 10;
+
+the Val variable will be hoisted at the top and will be declared and an undefined value is declared by default  . so the output will be undefined .
+
+Q2.What is a closure in JavaScript? How does lexical scope enable closures? Provide an example of a closure where an inner function retains access to variables from its outer function.
+
+Ans: When a function accesses its lxical environment though it is defined outside its original scope and performs operation its called closure .
+lexical scoping allowes the children function to access its parent functions data . for example ,
+
+
+function name(){
+let name = "Mahi"
+
+function printName(){
+console.log("Hi I am " + name)
+}
+  printName()
+}
+name()
+
+Q3.What is the difference between map(), filter(), and reduce()?
+
+Ans: Map : Map crates a new array by transforming each element
+Filter : Filter creates a new array if a condition or set of conditions match
+Reduce : Reduce transforms the array into a single value
+
+
+Q4.Explain how JavaScript handles asynchronous operations using Promises and async/await.
+
+Ans: When an asynchronus operation happens , it returns a promise which might be done,not done or pending . depending on the outcome of the promise, we use try catch blocks or similar exception handling operation to handle 
+the situation .
+Async/await: Async functions pause with await until a Promise provides a response.
+
+Q5.How does JavaScript handle type coercion when using == vs. ===? Explain with examples where == results in unexpected behavior due to implicit type conversion.
+
+Ans: In the case of == Js checks if the value of the variables are same or not . but whn === is used , both the Values and DataTypes for those variables has to match in order to get a truthy return. it is an implicit return
+type conversion as it happens automatically and we do not have access to the coersion datatype .
+
+
