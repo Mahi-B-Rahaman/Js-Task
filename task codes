@@ -1,0 +1,17 @@
+a. Write a function that takes a category (e.g., "Electronics") as input and returns an array of product names (strings) for that category, sorted alphabetically.
+
+
+import productsData from './prod.json' with { type: 'json' };
+let arr = []
+// console.log(productsData.products[7].name);
+function category() {
+    const len = productsData.products.length;
+    console.log(len);
+    for (let i = 0; i < len; i++) {
+        if (productsData.products[i].category == 'Electronics') {
+             arr.push(productsData.products[i].name);
+    }
+}
+}
+category();
+console.log( (arr).sort());
