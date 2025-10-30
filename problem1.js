@@ -1,4 +1,4 @@
-a. Write a function that takes a category (e.g., "Electronics") as input and returns an array of product names (strings) for that category, sorted alphabetically.
+// Write a function that takes a category (e.g., "Electronics") as input and returns an array of product names (strings) for that category, sorted alphabetically.
 
 
 import productsData from './prod.json' with { type: 'json' };
