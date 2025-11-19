@@ -2,7 +2,7 @@
 // and compares it to the overall average price of all products. Return an object with both averages and the difference.
 // Example output for "Water Resistant": { featureAvg: 165.00, overallAvg: 242.80, difference: -77.80 }
 
-//important things to note: 1 ta commeents 1 bar e check korbe, 2 jodi positive o negative duita thake tahole count korbe na
+//important things to note: ques er data ta actual er sathe match korena (manually check korsi)
 
 const data = require('./products.json');
 
